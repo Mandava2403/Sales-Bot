@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Raghava",
+    "email": "raghava@mindlinksinc.com",
+    "company": "Tech Corp",
+    "status": "interested",
+    "created_at": "2025-10-29T10:00:00",
+    "updated_at": "2025-10-30T11:38:03.701388",
+    "reminder_count": 0,
+    "last_reminder_sent": null,
+    "sent_at": "2025-10-30T11:37:04.066117"
+  },
+  {
+    "id": 2,
+    "name": "Chaitanya",
+    "email": "chaitanya.m@mindlinksinc.com",
+    "company": "Innovation Labs",
+    "status": "pending",
+    "created_at": "2025-10-29T10:00:00",
+    "updated_at": "2025-10-30T11:40:19.080289",
+    "reminder_count": 3,
+    "last_reminder_sent": "2025-10-30T11:40:19.080289",
+    "sent_at": "2025-10-30T11:37:08.443757"
+  },
+  {
+    "id": 3,
+    "name": "jai prakash",
+    "email": "jaiprakash@mindlinksinc.com",
+    "company": "Future Solutions",
+    "status": "pending",
+    "created_at": "2025-10-29T10:00:00",
+    "updated_at": "2025-10-30T11:40:23.033323",
+    "reminder_count": 3,
+    "last_reminder_sent": "2025-10-30T11:40:23.033323",
+    "sent_at": "2025-10-30T11:37:13.049298"
+  }
+]

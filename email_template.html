@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Demo Invitation</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; padding: 20px;">
+        <tr>
+            <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <!-- Header -->
+                    <tr>
+                        <td style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px 30px; text-align: center; border-radius: 8px 8px 0 0;">
+                            <h1 style="color: #ffffff; margin: 0; font-size: 28px;">{{ company_name }}</h1>
+                        </td>
+                    </tr>
+                    
+                    <!-- Body Content -->
+                    <tr>
+                        <td style="padding: 40px 30px;">
+                            <h2 style="color: #333333; margin-top: 0; font-size: 24px;">Hi {{ contact_name }},</h2>
+
+                            {% if is_reminder %}
+                            <div style="background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 5px; padding: 15px; margin: 20px 0;">
+                                <p style="color: #856404; font-size: 16px; margin: 0; font-weight: bold;">
+                                    🔔 Reminder #{{ reminder_number }} - Don't miss out on this opportunity!
+                                </p>
+                            </div>
+
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
+                                I wanted to follow up on my previous email about <strong>{{ product_name }}</strong>.
+                                I haven't heard back from you yet, and I don't want you to miss this opportunity!
+                            </p>
+                            {% else %}
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
+                                I hope this email finds you well! I'm reaching out from <strong>{{ company_name }}</strong>
+                                to share an exciting opportunity with you.
+                            </p>
+                            {% endif %}
+                            
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
+                                We've developed <strong>{{ product_name }}</strong> that can help transform how 
+                                {{ contact_company }} operates. Our solution has helped companies like yours:
+                            </p>
+                            
+                            <ul style="color: #666666; font-size: 16px; line-height: 1.8; margin: 20px 0;">
+                                <li>Increase productivity by up to 40%</li>
+                                <li>Reduce operational costs significantly</li>
+                                <li>Streamline workflows and processes</li>
+                                <li>Improve team collaboration</li>
+                            </ul>
+                            
+                            {% if is_reminder %}
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
+                                <strong>Last chance to secure your demo!</strong>
+                                I'd still love to show you how our solution can benefit {{ contact_company }}.
+                            </p>
+
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 30px 0;">
+                                Please take a moment to let me know if you're interested:
+                            </p>
+                            {% else %}
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
+                                <strong>Would you be interested in a personalized demo?</strong>
+                                I'd love to show you how our solution can benefit {{ contact_company }}.
+                            </p>
+
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 30px 0;">
+                                Please let me know if you'd like to schedule a quick 30-minute demo:
+                            </p>
+                            {% endif %}
+                            
+                            <!-- Buttons -->
+                            <table width="100%" cellpadding="0" cellspacing="0" style="margin: 30px 0;">
+                                <tr>
+                                    <td align="center" style="padding: 10px;">
+                                        <a href="{{ interested_link }}" style="display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #ffffff; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                                            ✅ Yes, I'm Interested!
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 10px;">
+                                        <a href="{{ not_interested_link }}" style="display: inline-block; padding: 15px 40px; background-color: #e0e0e0; color: #666666; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold;">
+                                            ❌ Not Right Now
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <p style="color: #666666; font-size: 14px; line-height: 1.6; margin: 30px 0 0 0;">
+                                Best regards,<br>
+                                <strong>{{ sender_name }}</strong><br>
+                                {{ company_name }}
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td style="background-color: #f8f9fa; padding: 20px 30px; text-align: center; border-radius: 0 0 8px 8px;">
+                            <p style="color: #999999; font-size: 12px; margin: 0;">
+                                This email was sent to {{ contact_email }}<br>
+                                © 2025 {{ company_name }}. All rights reserved.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

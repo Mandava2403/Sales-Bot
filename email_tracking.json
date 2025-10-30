@@ -1,0 +1,338 @@
+[
+  {
+    "contact_id": 1,
+    "contact_name": "John Doe",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "interested",
+    "timestamp": "2025-10-29T14:55:19.379044"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T15:01:03.167336"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "interested",
+    "timestamp": "2025-10-29T15:01:38.274687"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "John Doe",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T15:17:03.346863"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T15:17:07.552281"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T15:17:11.959566"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "John Doe",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "not_interested",
+    "timestamp": "2025-10-29T15:18:02.986963"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "interested",
+    "timestamp": "2025-10-29T15:18:41.365486"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "reminder_1_sent",
+    "timestamp": "2025-10-29T15:21:50.326906"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "reminder_2_sent",
+    "timestamp": "2025-10-29T15:31:51.211440"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "John Doe",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T15:51:05.234597"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T15:51:11.094533"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T15:51:17.001175"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "John Doe",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "reminder_1_sent",
+    "timestamp": "2025-10-29T15:52:10.569093"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "reminder_1_sent",
+    "timestamp": "2025-10-29T15:52:15.991524"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "reminder_3_sent",
+    "timestamp": "2025-10-29T15:52:22.039320"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "John Doe",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "reminder_2_sent",
+    "timestamp": "2025-10-29T15:53:15.474714"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "reminder_2_sent",
+    "timestamp": "2025-10-29T15:53:20.509653"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "John Doe",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "reminder_3_sent",
+    "timestamp": "2025-10-29T15:54:20.090336"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "reminder_3_sent",
+    "timestamp": "2025-10-29T15:54:25.005789"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "John Doe",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T16:02:05.310053"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T16:02:10.843290"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T16:02:15.955376"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "John Doe",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "interested",
+    "timestamp": "2025-10-29T16:03:09.411250"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "John Doe",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T16:10:04.832659"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T16:10:10.237484"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T16:10:15.770989"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "John Doe",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T16:14:05.136747"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T16:14:10.794113"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-29T16:14:15.897179"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "John Doe",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "interested",
+    "timestamp": "2025-10-29T16:14:27.408017"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "reminder_1_sent",
+    "timestamp": "2025-10-29T16:15:15.813505"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "reminder_1_sent",
+    "timestamp": "2025-10-29T16:15:20.339548"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Jane Smith",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "not_interested",
+    "timestamp": "2025-10-29T16:15:43.386152"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "reminder_2_sent",
+    "timestamp": "2025-10-29T16:16:25.622887"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "reminder_3_sent",
+    "timestamp": "2025-10-29T16:17:30.454961"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "not_interested",
+    "timestamp": "2025-10-29T16:18:50.552901"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "Mike Johnson",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "interested",
+    "timestamp": "2025-10-29T16:19:01.390636"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "Raghava",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-30T11:37:04.064757"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Chaitanya",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-30T11:37:08.440601"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "jai prakash",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "email_sent",
+    "timestamp": "2025-10-30T11:37:13.047720"
+  },
+  {
+    "contact_id": 1,
+    "contact_name": "Raghava",
+    "contact_email": "raghava@mindlinksinc.com",
+    "action": "interested",
+    "timestamp": "2025-10-30T11:38:03.743097"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Chaitanya",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "reminder_1_sent",
+    "timestamp": "2025-10-30T11:38:12.033664"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "jai prakash",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "reminder_1_sent",
+    "timestamp": "2025-10-30T11:38:16.417712"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Chaitanya",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "reminder_2_sent",
+    "timestamp": "2025-10-30T11:39:15.667434"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "jai prakash",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "reminder_2_sent",
+    "timestamp": "2025-10-30T11:39:19.756735"
+  },
+  {
+    "contact_id": 2,
+    "contact_name": "Chaitanya",
+    "contact_email": "chaitanya.m@mindlinksinc.com",
+    "action": "reminder_3_sent",
+    "timestamp": "2025-10-30T11:40:19.080289"
+  },
+  {
+    "contact_id": 3,
+    "contact_name": "jai prakash",
+    "contact_email": "jaiprakash@mindlinksinc.com",
+    "action": "reminder_3_sent",
+    "timestamp": "2025-10-30T11:40:23.033323"
+  }
+]

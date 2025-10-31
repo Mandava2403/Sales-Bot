@@ -16,23 +16,23 @@
     "name": "Chaitanya",
     "email": "chaitanya.m@mindlinksinc.com",
     "company": "Innovation Labs",
-    "status": "pending",
+    "status": "not_interested",
     "created_at": "2025-10-29T10:00:00",
-    "updated_at": "2025-10-30T11:40:19.080289",
+    "updated_at": "2025-10-31T10:58:03.389120",
     "reminder_count": 3,
     "last_reminder_sent": "2025-10-30T11:40:19.080289",
-    "sent_at": "2025-10-30T11:37:08.443757"
+    "sent_at": "2025-10-31T10:57:03.385751"
   },
   {
     "id": 3,
     "name": "jai prakash",
     "email": "jaiprakash@mindlinksinc.com",
     "company": "Future Solutions",
-    "status": "pending",
+    "status": "not_interested",
     "created_at": "2025-10-29T10:00:00",
-    "updated_at": "2025-10-30T11:40:23.033323",
+    "updated_at": "2025-10-31T10:58:09.198655",
     "reminder_count": 3,
     "last_reminder_sent": "2025-10-30T11:40:23.033323",
-    "sent_at": "2025-10-30T11:37:13.049298"
+    "sent_at": "2025-10-31T10:57:09.195833"
   }
 ]

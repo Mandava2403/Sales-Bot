@@ -6,10 +6,11 @@
     "company": "Tech Corp",
     "status": "interested",
     "created_at": "2025-10-29T10:00:00",
-    "updated_at": "2025-10-30T11:38:03.701388",
+    "updated_at": "2025-10-30T17:19:25.988203",
     "reminder_count": 0,
     "last_reminder_sent": null,
-    "sent_at": "2025-10-30T11:37:04.066117"
+    "context": "accounting firm looking for tax document automation solutions",
+    "sent_at": "2025-10-30T17:19:03.575584"
   },
   {
     "id": 2,
@@ -18,10 +19,11 @@
     "company": "Innovation Labs",
     "status": "pending",
     "created_at": "2025-10-29T10:00:00",
-    "updated_at": "2025-10-30T11:40:19.080289",
-    "reminder_count": 3,
-    "last_reminder_sent": "2025-10-30T11:40:19.080289",
-    "sent_at": "2025-10-30T11:37:08.443757"
+    "updated_at": "2025-10-30T17:19:08.213329",
+    "reminder_count": 0,
+    "last_reminder_sent": null,
+    "context": "software development and automation tools for faster coding",
+    "sent_at": "2025-10-30T17:19:08.213329"
   },
   {
     "id": 3,
@@ -30,9 +32,10 @@
     "company": "Future Solutions",
     "status": "pending",
     "created_at": "2025-10-29T10:00:00",
-    "updated_at": "2025-10-30T11:40:23.033323",
-    "reminder_count": 3,
-    "last_reminder_sent": "2025-10-30T11:40:23.033323",
-    "sent_at": "2025-10-30T11:37:13.049298"
+    "updated_at": "2025-10-30T17:19:12.920185",
+    "reminder_count": 0,
+    "last_reminder_sent": null,
+    "context": "healthcare clinic needing patient data management and insurance processing",
+    "sent_at": "2025-10-30T17:19:12.920185"
   }
 ]

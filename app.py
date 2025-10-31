@@ -14,8 +14,8 @@ app = FastAPI(title="Scheduler Bot API")
 CONTACTS_FILE = "contacts.json"
 TRACKING_FILE = "email_tracking.json"
 
-# Calendly link
-CALENDLY_LINK = os.getenv("CALENDLY_LINK")
+# Google Calendar booking link
+GOOGLE_CALENDAR_BOOKING_URL = os.getenv("GOOGLE_CALENDAR_BOOKING_URL", "https://calendar.app.google/hoMfTbUpsHjwjYZr5")
 
 
 def load_json(filename):
@@ -84,16 +84,19 @@ async def root():
 
 @app.get("/interested/{contact_id}")
 async def interested(contact_id: int):
-    """Handle 'Interested' button click - redirect to Calendly"""
-    
+    """Handle 'Interested' button click - redirect to Google Calendar"""
+
     # Update contact status
     update_contact_status(contact_id, "interested")
-    
+
     # Track the response
     track_response(contact_id, "interested")
-    
-    # Redirect to Calendly
-    return RedirectResponse(url=CALENDLY_LINK)
+
+    print(f"✅ Contact {contact_id} marked as interested - redirecting to Google Calendar")
+    print(f"🔗 Redirecting to: {GOOGLE_CALENDAR_BOOKING_URL}")
+
+    # Redirect to Google Calendar
+    return RedirectResponse(url=GOOGLE_CALENDAR_BOOKING_URL)
 
 
 @app.get("/not-interested/{contact_id}")

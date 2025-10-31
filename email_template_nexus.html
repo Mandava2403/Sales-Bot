@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus AI - SDLC Automation Platform</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; padding: 20px;">
+        <tr>
+            <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <!-- Header -->
+                    <tr>
+                        <td style="background: linear-gradient(135deg, #6f42c1 0%, #e83e8c 100%); padding: 40px 30px; text-align: center; border-radius: 8px 8px 0 0;">
+                            <h1 style="color: #ffffff; margin: 0; font-size: 28px;">{{ company_name }}</h1>
+                            <p style="color: #ffffff; margin: 10px 0 0 0; font-size: 16px;">Nexus AI - SDLC Platform</p>
+                        </td>
+                    </tr>
+
+                    <!-- Body Content -->
+                    <tr>
+                        <td style="padding: 40px 30px;">
+                            <h2 style="color: #333333; margin-top: 0; font-size: 24px;">Hi {{ contact_name }},</h2>
+
+                            {% if is_reminder %}
+                            <div style="background-color: #f3e5f5; border: 1px solid #d1c4e9; border-radius: 5px; padding: 15px; margin: 20px 0;">
+                                <p style="color: #6a1b9a; font-size: 16px; margin: 0; font-weight: bold;">
+                                    🔔 Reminder #{{ reminder_number }} - Transform your development process with AI!
+                                </p>
+                            </div>
+
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
+                                I wanted to follow up about <strong>Nexus AI</strong> - our revolutionary SDLC platform that can transform
+                                how {{ contact_company }} builds software.
+                            </p>
+                            {% else %}
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
+                                I hope this email finds you well! I'm reaching out from <strong>{{ company_name }}</strong>
+                                with an incredible breakthrough in software development automation.
+                            </p>
+                            {% endif %}
+
+                            <div style="background-color: #f8f9fa; border-left: 4px solid #6f42c1; padding: 20px; margin: 25px 0;">
+                                <h3 style="color: #6f42c1; margin: 0 0 15px 0; font-size: 20px;">🤖 Nexus AI - SDLC Automation Platform</h3>
+                                <p style="color: #333333; font-size: 16px; line-height: 1.6; margin: 0;">
+                                    Our AI-powered SDLC platform automatically generates 60-70% of your code from requirements and schemas,
+                                    reducing development time from 1 day to just 1 hour per module!
+                                </p>
+                            </div>
+
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
+                                Here's how Nexus AI revolutionizes {{ contact_company }}'s development process:
+                            </p>
+
+                            <ul style="color: #666666; font-size: 16px; line-height: 1.8; margin: 20px 0;">
+                                <li><strong>Smart Code Generation:</strong> Upload requirements & schemas → Get 60-70% working code</li>
+                                <li><strong>AI Agent Assignment:</strong> Assign specialized AI agents to each module</li>
+                                <li><strong>Auto-Repository Integration:</strong> Generated code automatically pushed to your repository</li>
+                                <li><strong>Built-in Validation:</strong> AI validator creates tasks for any issues found</li>
+                                <li><strong>Massive Time Savings:</strong> 1 day → 1 hour per module (96% faster!)</li>
+                                <li><strong>Full SDLC Management:</strong> From requirements to deployment</li>
+                            </ul>
+
+                            <div style="background-color: #f3e5f5; border-radius: 8px; padding: 20px; margin: 25px 0;">
+                                <p style="color: #4a148c; font-size: 18px; font-weight: bold; margin: 0 0 10px 0; text-align: center;">
+                                    ⚡ 96% Faster Development: 1 Day → 1 Hour
+                                </p>
+                                <p style="color: #4a148c; font-size: 14px; margin: 0; text-align: center;">
+                                    Generate 60-70% of your code automatically with AI
+                                </p>
+                            </div>
+
+                            <div style="background-color: #e8f5e8; border: 1px solid #66bb6a; border-radius: 5px; padding: 15px; margin: 20px 0;">
+                                <h4 style="color: #2e7d32; margin: 0 0 10px 0; font-size: 16px;">🚀 Complete Development Workflow:</h4>
+                                <ol style="color: #2e7d32; font-size: 14px; margin: 0; padding-left: 20px;">
+                                    <li>Upload requirements and database schema</li>
+                                    <li>Create modules and assign AI agents</li>
+                                    <li>Click "Execute" → AI generates code for all tasks</li>
+                                    <li>Code automatically pushed to repository</li>
+                                    <li>AI validator reviews and creates improvement tasks</li>
+                                    <li>Developers focus on the remaining 30-40%</li>
+                                </ol>
+                            </div>
+
+                            <div style="background-color: #fff3e0; border: 1px solid #ffab00; border-radius: 5px; padding: 15px; margin: 20px 0;">
+                                <p style="color: #ef6c00; font-size: 16px; margin: 0; text-align: center;">
+                                    <strong>💻 Perfect for:</strong> Software Companies • Development Teams • Tech Startups • IT Departments
+                                </p>
+                            </div>
+
+                            {% if is_reminder %}
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
+                                <strong>This could be a game-changer for {{ contact_company }}!</strong>
+                                I'd love to show you a live demo of Nexus AI in action.
+                            </p>
+
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 30px 0;">
+                                Please take a moment to let me know if you're interested:
+                            </p>
+                            {% else %}
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
+                                <strong>Ready to see the future of software development?</strong>
+                                I'd love to show you a personalized demo of how Nexus AI can benefit {{ contact_company }}.
+                            </p>
+
+                            <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 30px 0;">
+                                Please let me know if you'd like to schedule a quick 30-minute demo:
+                            </p>
+                            {% endif %}
+
+                            <!-- Buttons -->
+                            <table width="100%" cellpadding="0" cellspacing="0" style="margin: 30px 0;">
+                                <tr>
+                                    <td align="center" style="padding: 10px;">
+                                        <a href="{{ booking_link }}" style="display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #6f42c1 0%, #e83e8c 100%); color: #ffffff; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                                            📅 Schedule Demo Now!
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 10px;">
+                                        <a href="{{ not_interested_link }}" style="display: inline-block; padding: 15px 40px; background-color: #e0e0e0; color: #666666; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold;">
+                                            ❌ Not Right Now
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="color: #666666; font-size: 14px; line-height: 1.6; margin: 30px 0 0 0;">
+                                Best regards,<br>
+                                <strong>{{ sender_name }}</strong><br>
+                                {{ company_name }}<br>
+                                <em>AI Development Solutions Specialist</em>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="background-color: #f8f9fa; padding: 20px 30px; text-align: center; border-radius: 0 0 8px 8px;">
+                            <p style="color: #999999; font-size: 12px; margin: 0;">
+                                This email was sent to {{ contact_email }}<br>
+                                © 2025 {{ company_name }}. All rights reserved.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

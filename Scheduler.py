@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 import os
 from apscheduler.schedulers.background import BackgroundScheduler
 import time
+import threading
 
 # Load environment variables
 load_dotenv()
@@ -23,10 +24,16 @@ COMPANY_NAME = os.getenv("COMPANY_NAME")
 PRODUCT_NAME = os.getenv("PRODUCT_NAME")
 BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
 
+# Google Calendar appointment booking
+GOOGLE_CALENDAR_BOOKING_URL = os.getenv("GOOGLE_CALENDAR_BOOKING_URL", "https://calendar.app.google/hoMfTbUpsHjwjYZr5")
+
 # File paths
 CONTACTS_FILE = "contacts.json"
 TRACKING_FILE = "email_tracking.json"
-TEMPLATE_FILE = "email_template.html"
+TEMPLATE_FILE = "email_template.html"  # Default template
+TEMPLATE_TAX = "email_template_tax.html"
+TEMPLATE_DENTAL = "email_template_dental.html"
+TEMPLATE_NEXUS = "email_template_nexus.html"
 
 # Reminder configuration
 DEFAULT_REMINDER_INTERVAL_MINUTES = 1  # Default reminder interval in minutes
@@ -48,23 +55,57 @@ def save_json(filename, data):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def load_email_template():
+def get_template_for_context(context):
+    """Determine which template to use based on contact context"""
+    if not context:
+        return TEMPLATE_FILE
+
+    context_lower = context.lower()
+
+    # Tax Portal keywords
+    tax_keywords = ["tax", "accounting", "finance", "cpa", "bookkeeping", "financial", "audit", "1040"]
+    if any(keyword in context_lower for keyword in tax_keywords):
+        return TEMPLATE_TAX
+
+    # Dental/Healthcare keywords
+    dental_keywords = ["health", "medical", "dental", "insurance", "patient", "clinic", "healthcare", "hospital", "practice"]
+    if any(keyword in context_lower for keyword in dental_keywords):
+        return TEMPLATE_DENTAL
+
+    # Software Development keywords
+    dev_keywords = ["software", "development", "coding", "ai", "tech", "programming", "sdlc", "automation", "developer"]
+    if any(keyword in context_lower for keyword in dev_keywords):
+        return TEMPLATE_NEXUS
+
+    # Default template if no match
+    return TEMPLATE_FILE
+
+
+def load_email_template(template_file=None):
     """Load HTML email template"""
-    with open(TEMPLATE_FILE, 'r', encoding='utf-8') as f:
+    if template_file is None:
+        template_file = TEMPLATE_FILE
+
+    with open(template_file, 'r', encoding='utf-8') as f:
         return f.read()
 
 
 def send_email(contact):
     """Send email to a single contact"""
     try:
-        # Load template
-        template_content = load_email_template()
+        # Get appropriate template based on context
+        template_file = get_template_for_context(contact.get('context', ''))
+        template_content = load_email_template(template_file)
         template = Template(template_content)
-        
-        # Generate tracking links
-        interested_link = f"{BASE_URL}/interested/{contact['id']}"
+
+        # Log which template is being used
+        template_name = template_file.replace('email_template_', '').replace('.html', '').replace('email_template', 'default')
+        print(f"📧 Using {template_name} template for {contact['name']} (context: {contact.get('context', 'none')})")
+
+        # Generate tracking links that redirect to Google Calendar
+        booking_link = f"{BASE_URL}/interested/{contact['id']}"  # This will update status then redirect to calendar
         not_interested_link = f"{BASE_URL}/not-interested/{contact['id']}"
-        
+
         # Render template with contact data
         html_content = template.render(
             contact_name=contact['name'],
@@ -73,7 +114,7 @@ def send_email(contact):
             company_name=COMPANY_NAME,
             product_name=PRODUCT_NAME,
             sender_name=SENDER_NAME,
-            interested_link=interested_link,
+            booking_link=booking_link,
             not_interested_link=not_interested_link
         )
         
@@ -136,12 +177,17 @@ def send_reminder_email(contact_id, reminder_interval_minutes=None):
 
     # Send reminder email
     try:
-        # Load template
-        template_content = load_email_template()
+        # Get appropriate template based on context
+        template_file = get_template_for_context(contact.get('context', ''))
+        template_content = load_email_template(template_file)
         template = Template(template_content)
 
-        # Generate tracking links
-        interested_link = f"{BASE_URL}/interested/{contact['id']}"
+        # Log which template is being used
+        template_name = template_file.replace('email_template_', '').replace('.html', '').replace('email_template', 'default')
+        print(f"🔔 Using {template_name} template for reminder to {contact['name']}")
+
+        # Generate tracking links that redirect to Google Calendar
+        booking_link = f"{BASE_URL}/interested/{contact['id']}"  # This will update status then redirect to calendar
         not_interested_link = f"{BASE_URL}/not-interested/{contact['id']}"
 
         # Render template with contact data (add reminder note)
@@ -152,7 +198,7 @@ def send_reminder_email(contact_id, reminder_interval_minutes=None):
             company_name=COMPANY_NAME,
             product_name=PRODUCT_NAME,
             sender_name=SENDER_NAME,
-            interested_link=interested_link,
+            booking_link=booking_link,
             not_interested_link=not_interested_link,
             is_reminder=True,
             reminder_number=reminder_count + 1
@@ -342,6 +388,9 @@ def send_now(reminder_interval_minutes=None):
     send_emails_to_all(reminder_interval_minutes)
 
 
+# Note: Tracking server is handled by app.py (existing FastAPI server)
+
+
 if __name__ == "__main__":
     import sys
     
@@ -351,7 +400,7 @@ if __name__ == "__main__":
     
     if len(sys.argv) > 1:
         if sys.argv[1] == "now":
-            # Send immediately
+            # Send immediately (tracking server should be run separately via app.py)
             send_now()
         elif sys.argv[1] == "schedule":
             # Schedule emails
@@ -360,6 +409,8 @@ if __name__ == "__main__":
                 hour = int(sys.argv[3])  # e.g., 9 for 9 AM
                 minute = int(sys.argv[4]) if len(sys.argv) > 4 else 0
                 reminder_interval = int(sys.argv[5]) if len(sys.argv) > 5 else DEFAULT_REMINDER_INTERVAL_MINUTES
+
+                # Schedule emails (tracking server should be run separately via app.py)
                 schedule_emails(day_of_week=day, hour=hour, minute=minute, reminder_interval_minutes=reminder_interval)
             else:
                 print("Usage: python scheduler.py schedule <day> <hour> [minute] [reminder_interval]")

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Demo Invitation</title>
+    <title>Tax Portal - Document Processing Solution</title>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
     <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; padding: 20px;">
@@ -12,11 +12,12 @@
                 <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                     <!-- Header -->
                     <tr>
-                        <td style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px 30px; text-align: center; border-radius: 8px 8px 0 0;">
+                        <td style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); padding: 40px 30px; text-align: center; border-radius: 8px 8px 0 0;">
                             <h1 style="color: #ffffff; margin: 0; font-size: 28px;">{{ company_name }}</h1>
+                            <p style="color: #ffffff; margin: 10px 0 0 0; font-size: 16px;">Tax Portal Solution</p>
                         </td>
                     </tr>
-                    
+
                     <!-- Body Content -->
                     <tr>
                         <td style="padding: 40px 30px;">
@@ -25,37 +26,54 @@
                             {% if is_reminder %}
                             <div style="background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 5px; padding: 15px; margin: 20px 0;">
                                 <p style="color: #856404; font-size: 16px; margin: 0; font-weight: bold;">
-                                    🔔 Reminder #{{ reminder_number }} - Don't miss out on this opportunity!
+                                    🔔 Reminder #{{ reminder_number }} - Transform your tax document processing!
                                 </p>
                             </div>
 
                             <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
-                                I wanted to follow up on my previous email about <strong>{{ product_name }}</strong>.
-                                I haven't heard back from you yet, and I don't want you to miss this opportunity!
+                                I wanted to follow up about our <strong>Tax Portal Solution</strong> that can revolutionize
+                                how {{ contact_company }} handles tax document processing.
                             </p>
                             {% else %}
                             <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
                                 I hope this email finds you well! I'm reaching out from <strong>{{ company_name }}</strong>
-                                to share an exciting opportunity with you.
+                                with an exciting solution for tax document processing automation.
                             </p>
                             {% endif %}
-                            
+
+                            <div style="background-color: #f8f9fa; border-left: 4px solid #28a745; padding: 20px; margin: 25px 0;">
+                                <h3 style="color: #28a745; margin: 0 0 15px 0; font-size: 20px;">🏆 Tax Portal Solution</h3>
+                                <p style="color: #333333; font-size: 16px; line-height: 1.6; margin: 0;">
+                                    Our AI-powered tax portal automatically processes 1040 documents and extracts all critical data,
+                                    turning hours of manual work into minutes of automated processing.
+                                </p>
+                            </div>
+
                             <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
-                                We've developed <strong>{{ product_name }}</strong> that can help transform how 
-                                {{ contact_company }} operates. Our solution has helped companies like yours:
+                                Here's how our Tax Portal can transform {{ contact_company }}:
                             </p>
-                            
+
                             <ul style="color: #666666; font-size: 16px; line-height: 1.8; margin: 20px 0;">
-                                <li>Increase productivity by up to 40%</li>
-                                <li>Reduce operational costs significantly</li>
-                                <li>Streamline workflows and processes</li>
-                                <li>Improve team collaboration</li>
+                                <li><strong>Automated 1040 Processing:</strong> Upload tax documents and get structured data instantly</li>
+                                <li><strong>99.9% Accuracy:</strong> AI-powered extraction with human-level precision</li>
+                                <li><strong>Massive Time Savings:</strong> Reduce processing time from hours to minutes</li>
+                                <li><strong>Seamless Integration:</strong> Easy API integration with your existing systems</li>
+                                <li><strong>Secure & Compliant:</strong> Bank-level security with full audit trails</li>
                             </ul>
-                            
+
+                            <div style="background-color: #e8f5e8; border-radius: 8px; padding: 20px; margin: 25px 0;">
+                                <p style="color: #155724; font-size: 18px; font-weight: bold; margin: 0 0 10px 0; text-align: center;">
+                                    💡 Perfect for Accounting Firms, Tax Preparers & Financial Services
+                                </p>
+                                <p style="color: #155724; font-size: 14px; margin: 0; text-align: center;">
+                                    Join 500+ firms already using our solution to streamline tax season
+                                </p>
+                            </div>
+
                             {% if is_reminder %}
                             <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
-                                <strong>Last chance to secure your demo!</strong>
-                                I'd still love to show you how our solution can benefit {{ contact_company }}.
+                                <strong>Limited time offer!</strong>
+                                I'd love to show you a personalized demo of how our Tax Portal can benefit {{ contact_company }}.
                             </p>
 
                             <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 30px 0;">
@@ -63,20 +81,20 @@
                             </p>
                             {% else %}
                             <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 20px 0;">
-                                <strong>Would you be interested in a personalized demo?</strong>
-                                I'd love to show you how our solution can benefit {{ contact_company }}.
+                                <strong>Would you be interested in seeing this in action?</strong>
+                                I'd love to show you a personalized demo of how our Tax Portal can benefit {{ contact_company }}.
                             </p>
 
                             <p style="color: #666666; font-size: 16px; line-height: 1.6; margin: 30px 0;">
                                 Please let me know if you'd like to schedule a quick 30-minute demo:
                             </p>
                             {% endif %}
-                            
+
                             <!-- Buttons -->
                             <table width="100%" cellpadding="0" cellspacing="0" style="margin: 30px 0;">
                                 <tr>
                                     <td align="center" style="padding: 10px;">
-                                        <a href="{{ booking_link }}" style="display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #ffffff; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                                        <a href="{{ booking_link }}" style="display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: #ffffff; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
                                             📅 Schedule Demo Now!
                                         </a>
                                     </td>
@@ -89,15 +107,16 @@
                                     </td>
                                 </tr>
                             </table>
-                            
+
                             <p style="color: #666666; font-size: 14px; line-height: 1.6; margin: 30px 0 0 0;">
                                 Best regards,<br>
                                 <strong>{{ sender_name }}</strong><br>
-                                {{ company_name }}
+                                {{ company_name }}<br>
+                                <em>Tax Portal Solutions Specialist</em>
                             </p>
                         </td>
                     </tr>
-                    
+
                     <!-- Footer -->
                     <tr>
                         <td style="background-color: #f8f9fa; padding: 20px 30px; text-align: center; border-radius: 0 0 8px 8px;">
